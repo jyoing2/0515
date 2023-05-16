@@ -40,3 +40,21 @@ body {
 }
 
 /* 아래에 css animation을 지정해주세요. */
+.loader{
+  animation-duration: 3s;
+  animation-name: loader;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border: 1px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
